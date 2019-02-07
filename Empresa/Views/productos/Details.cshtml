@@ -1,0 +1,63 @@
+@model Empresa.Models.productos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>productos</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductosID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductosID)
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_producto)
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio_unitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio_unitario)
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio_venta_publico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio_venta_publico)
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_fabricacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_fabricacion)
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_caducidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_caducidad)
+        <dt>
+            @Html.DisplayNameFor(model => model.Iva)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Iva)
+    </dl>
+</div>
+<p>
+            @Html.ActionLink("Edit", "Edit", new {
+ 						ProductosID = Model.ProductosID 
+ 						}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+ 

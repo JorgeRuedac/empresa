@@ -1,0 +1,39 @@
+@model Empresa.Models.Bodega
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bodega</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BodegaID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BodegaID)
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductosID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductosID)
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacion)
+    </dl>
+</div>
+<p>
+            @Html.ActionLink("Edit", "Edit", new {
+ 						BodegaID = Model.BodegaID 
+ 						}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+ 

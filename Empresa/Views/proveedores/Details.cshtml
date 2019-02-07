@@ -1,0 +1,57 @@
+@model Empresa.Models.proveedores
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>proveedores</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProveedoresID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProveedoresID)
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_empresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_empresa)
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular_contacto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Celular_contacto)
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_contacto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_contacto)
+    </dl>
+</div>
+<p>
+            @Html.ActionLink("Edit", "Edit", new {
+ 						ProveedoresID = Model.ProveedoresID 
+ 						}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+ 
